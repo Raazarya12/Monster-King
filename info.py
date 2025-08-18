@@ -56,7 +56,7 @@ INVITED_USER_TRAIL = int(environ.get('INVITED_USER_TRAIL', "86400")) #set in sec
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'Linkcents.com'))
-STREAM_API = (environ.get('STREAM_API', 'e57f2caf7518cb63e45443b3e998f8d7561b6edf'))
+STREAM_API = (environ.get('STREAM_API', '0f4ef04d1da2d17a4147ad10be2a8298c0b852cd'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Hoe/69'))
 STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "False")), False)
 
@@ -65,15 +65,15 @@ premium = environ.get('PREMIUM_LOGS', '-1001985196029')
 PREMIUM_LOGS = int(premium) if premium and id_pattern.search(premium) else None
 
 #files link shortnet
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Linkcents.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'e57f2caf7518cb63e45443b3e998f8d7561b6edf')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'vplink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '0f4ef04d1da2d17a4147ad10be2a8298c0b852cd')
 IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
 
 # verify link shortner
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/link_Streaam_Movies/35")
-VERIFY2_URL = environ.get('VERIFY2_URL', "Linkcents.com")
-VERIFY2_API = environ.get('VERIFY2_API', "e57f2caf7518cb63e45443b3e998f8d7561b6edf")
+VERIFY2_URL = environ.get('VERIFY2_URL', "vplink.in")
+VERIFY2_API = environ.get('VERIFY2_API', "0f4ef04d1da2d17a4147ad10be2a8298c0b852cd")
 
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001998895377').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "7")
