@@ -70,7 +70,7 @@ SHORTLINK_API = environ.get('SHORTLINK_API', '0f4ef04d1da2d17a4147ad10be2a8298c0
 IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
 
 # verify link shortner
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/link_Streaam_Movies/35")
 VERIFY2_URL = environ.get('VERIFY2_URL', "vplink.in")
 VERIFY2_API = environ.get('VERIFY2_API', "0f4ef04d1da2d17a4147ad10be2a8298c0b852cd")
