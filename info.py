@@ -55,7 +55,7 @@ USERS_COUNT = int(environ.get('USERS_COUNT', "2")) # Set Referel User Count
 INVITED_USER_TRAIL = int(environ.get('INVITED_USER_TRAIL', "86400")) #set in seconds, free trail invites users in 1 day, 
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'Linkcents.com'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'vplink.in'))
 STREAM_API = (environ.get('STREAM_API', '0f4ef04d1da2d17a4147ad10be2a8298c0b852cd'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Hoe/69'))
 STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "False")), False)
