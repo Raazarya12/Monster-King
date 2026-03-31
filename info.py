@@ -67,10 +67,10 @@ PREMIUM_LOGS = int(premium) if premium and id_pattern.search(premium) else None
 #files link shortnet
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'vplink.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '0f4ef04d1da2d17a4147ad10be2a8298c0b852cd')
-IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
+IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'True')), False)
 
 # verify link shortner
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/How_To_Verify_01")
 VERIFY2_URL = environ.get('VERIFY2_URL', "vplink.in")
 VERIFY2_API = environ.get('VERIFY2_API', "0f4ef04d1da2d17a4147ad10be2a8298c0b852cd")
