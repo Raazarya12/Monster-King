@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', "29127726"))
-API_HASH = environ.get('API_HASH', "b25483bdec0d64a73899ee8ede66cd40")
-BOT_TOKEN = environ.get('BOT_TOKEN', "6949780397:AAFcrsLdqgqShfIyYvHY8Du01TIEPQfEmHs")
+API_ID = int(environ.get('API_ID', "20932503"))
+API_HASH = environ.get('API_HASH', "4742289cfae50c92d8de04b4daae2c64")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8119368246:AAG_U6VLHR7gpnFlZIhAE4uNK1m4Zgqu6tc")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -30,22 +30,22 @@ CODE = (environ.get('CODE', 'https://i.ibb.co/zxCXkYj/image.jpg')) # Scanner Cod
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1985196029').split()]
-OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "Titanoboa_team") # widout 👉 @
+OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "Monster_cave") # widout 👉 @
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001572383457').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', "-1001430858047")
+auth_channel = environ.get('AUTH_CHANNEL', "-1003676614863")
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID')
-reqst_channel = environ.get('REQST_CHANNEL_ID', "-1002067624859")
+reqst_channel = environ.get('REQST_CHANNEL_ID', "-1003910919500")
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://deityteam60:Kcw2bmqslayYz0SF@cluster0.hnjt2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Raazarya345:RAAZBHAI@cluster0.acwhngr.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Raaz")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Titanoboa')
 
@@ -70,7 +70,7 @@ SHORTLINK_API = environ.get('SHORTLINK_API', '0f4ef04d1da2d17a4147ad10be2a8298c0
 IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
 
 # verify link shortner
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), False)
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/How_To_Verify_01")
 VERIFY2_URL = environ.get('VERIFY2_URL', "vplink.in")
 VERIFY2_API = environ.get('VERIFY2_API', "0f4ef04d1da2d17a4147ad10be2a8298c0b852cd")
@@ -79,17 +79,17 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Mix_Cinema_Box')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Latest_movies_freeOnNet')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Monster_cave')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/HD_ADDA_HUB')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001801990402))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Titanoboa_team')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002825704281))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Monster_cave')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "Falsd")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 PM_FILTER = is_enabled((environ.get('PM_FILTER', "False")), True)
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Mix_Cinema_Box')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Finding_Movies')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
@@ -105,7 +105,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 # Streaming
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001801990402")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002754501360")
 if len(BIN_CHANNEL) == 0:
     logging.error('BIN_CHANNEL is missing, exiting now')
     exit()
