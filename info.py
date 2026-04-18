@@ -61,7 +61,7 @@ STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Hoe/69'))
 STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "True")), False)
 
 #premium Users Satuts
-premium = environ.get('PREMIUM_LOGS', '-1001985196029')
+premium = environ.get('PREMIUM_LOGS', '-1008199400850')
 PREMIUM_LOGS = int(premium) if premium and id_pattern.search(premium) else None
 
 #files link shortnet
