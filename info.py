@@ -61,7 +61,7 @@ STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Hoe/69'))
 STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "True")), False)
 
 #premium Users Satuts
-premium = environ.get('PREMIUM_LOGS', '-1008199400850')
+premium = environ.get('PREMIUM_LOGS', '-1002825704281')
 PREMIUM_LOGS = int(premium) if premium and id_pattern.search(premium) else None
 
 #files link shortnet
@@ -82,7 +82,7 @@ PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Finding_Movies')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/HD_ADDA_HUB')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002754501360))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002825704281))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Monster_cave')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "Falsd")), False)
@@ -105,7 +105,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 # Streaming
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002754501360")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002825704281")
 if len(BIN_CHANNEL) == 0:
     logging.error('BIN_CHANNEL is missing, exiting now')
     exit()
