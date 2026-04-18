@@ -29,7 +29,7 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/12adf3a7451b
 CODE = (environ.get('CODE', 'https://i.ibb.co/zxCXkYj/image.jpg')) # Scanner Code image 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1985196029').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8199400850').split()]
 OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "Monster_cave") # widout 👉 @
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001572383457').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
